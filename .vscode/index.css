@@ -1,62 +1,87 @@
-.mann{ 
-    width:30vw; 
-    margin-left: 3vw; 
-    transition: all 0.2s ease; 
-} 
-
-.mann:hover 
-{ transform: translateY(-30px); 
-} 
-
-.frau{ 
-    width:30vw; 
-    transition: all 0.2s ease; 
-} 
-
-.frau:hover { 
-    transform: translateY(-20px); 
-} 
-
-.opa{ 
-    width: 30vw; 
-    margin-right: 4vw; 
-    transition: all 0.2s ease; 
-} 
-
-.opa:hover{ 
-    transform: translateY(-20px); 
-} 
-
-.opa2{ 
-    width: 30vw; 
-    margin-right: 4vw; 
-    transition: all 0.2s ease; 
-} 
-
-.opa2:hover{ 
-    transform: translateY(-20px); 
-} 
-
-#kopf{ 
-    color:rgb(132, 81, 10); 
-    font-size: 4vw; 
-    text-align:center; 
-    font-family: myfont; 
-    line-height: 1; 
-} 
-
-body{ 
-    background-color: rgb(255, 248, 240); 
-} 
-
-@font-face{ 
-    font-family: myfont; 
-    src: url(./fonts/Quicksand-VariableFont_wght.ttf) 
+.people-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 12vh 3vw 0;
 }
 
-#bottom{ 
-    color:rgb(132, 81, 10); 
-    font-size: 2vw; text-align:center; 
-    font-family: myfont; 
-    line-height: 1; 
+.people-row a {
+    display: block;
+}
+
+
+.mann{
+width:20vw;
+transition: all 0.2s ease;
+}
+.mann:hover {
+  transform: translateY(-30px);
+}
+
+.frau{  
+    width:20vw;
+    transition: all 0.2s ease;
+     transform: translateY(25px);
+}
+
+.frau:hover {
+    transform: translateY(-20px);
+}
+.opa{
+    width: 23vw;
+    transform: translateX(-70px);
+    
+    
+}
+
+.opa:hover{
+    transform: translateY(-30px, -50px);
+}
+
+.opa2{
+    width: 6vw;
+    transition: all 0.2s ease;
+    top: 18vh;
+    left: 78vw;
+    transform: translate(-100px, -70px);
+
+}
+
+.opa2:hover{
+    transform: translateY(-130px);
+}
+
+
+
+#kopf{
+
+color:rgb(132, 81, 10);
+font-size: 4vw;
+text-align:center;
+font-family: myfont;
+line-height: 1;
+    
+}
+
+
+
+body{
+    
+    background-color: rgb(255, 248, 240);
+}
+
+
+@font-face{
+    font-family: myfont;
+    src: url(./fonts/Quicksand-VariableFont_wght.ttf)
+}
+
+
+#bottom{
+    color:rgb(132, 81, 10);
+font-size: 2vw;
+text-align:center;
+font-family: myfont;
+line-height: 1;
 }
