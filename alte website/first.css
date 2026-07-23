@@ -1,0 +1,47 @@
+body{background-color: rgb(255, 248, 240);}
+
+#matchamann {
+
+width: 35vw;
+display: block;
+margin: 0 auto;
+margin-top: 10vw;
+
+}
+#porridge {
+    width: 40vw;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10vw;
+    margin-bottom: 3vw;
+
+}
+
+@font-face{
+    font-family: myfont;
+    src: url(./fonts/Quicksand-VariableFont_wght.ttf)
+}
+
+
+#text{
+    color:rgb(132, 81, 10);
+font-size: 2.5vw;
+text-align:center;
+font-family: myfont;
+line-height: 1;
+margin-top: 10vw;
+    
+}
+
+#link{
+color:rgb(132, 81, 10);
+font-size: 1vw;
+text-align:center;
+font-family: myfont;
+line-height: 1;
+display: block;
+margin: 0 auto;
+margin-bottom: 10vw;
+    
+
+}
