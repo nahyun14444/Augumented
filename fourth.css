@@ -83,3 +83,20 @@ model-viewer {
     font-size: 16px;
     cursor: pointer;
 }
+
+.qr-section{
+    text-align:center;
+    margin-top:-100px;
+}
+
+.qr-section p{
+    color:rgb(132,81,10);
+    font-size:16px;
+    margin-bottom:10px;
+    font-family:myfont;
+}
+
+.qr-code{
+    width:90px;
+    height:90px;
+}
