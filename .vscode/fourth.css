@@ -59,3 +59,48 @@ model-viewer{
     src: url(./fonts/Quicksand-VariableFont_wght.ttf)
 }
 
+model-viewer {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+.ar-button {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
+
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+
+    background-color: rgb(132, 81, 10);
+    color: rgb(255, 248, 240);
+
+    font-family: myfont, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.ar-button:hover {
+    opacity: 0.8;
+}
+
+.qr-section{
+    margin-top:30px;
+    text-align:center;
+}
+
+.qr-section p{
+    color:rgb(132,81,10);
+    font-size:18px;
+    margin-bottom:12px;
+}
+
+.qr-code{
+    width:120px;
+    height:120px;
+    border-radius:10px;
+}

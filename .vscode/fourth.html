@@ -11,7 +11,10 @@
     <script
         type="module"
         src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js">
+        type="module"
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js">
     </script>
+
 </head>
 
 <body>
@@ -23,13 +26,56 @@
         <section class="model-area">
 
             <model-viewer
-                src="./model/cafe-fin.glb"
-                alt="3D-Modell der Vesuvio Bakery"
-                camera-controls
-                auto-rotate
-                shadow-intensity="1"
-                exposure="1">
+                 id="bakeryModel"
+                    src="./model/cafe-fin.glb"
+                    alt="3D-Modell der Vesuvio Bakery"
+
+                    camera-controls
+                    auto-rotate
+
+                    shadow-intensity="1"
+                    exposure="1">
+
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    ar-placement="floor"
+                    ar-scale="auto"
+
+                     <button slot="ar-button" class="ar-button">
+                    View in AR
+                    </button>
             </model-viewer>
+            
+         <script>
+            const model = document.getElementById("bakeryModel");
+
+            const bell = new Audio("./model/bell.mp3");
+            const coffee = new Audio("./model/cafe.mp3");
+            const people = new Audio("./model/musik.mp3");
+
+            let playing = false;
+
+            model.addEventListener("click", () => {
+
+                if (!playing) {
+                    bell.play();
+                    coffee.play();
+                    people.play();
+                    playing = true;
+                } else {
+                    bell.pause();
+                    coffee.pause();
+                    people.pause();
+
+                    bell.currentTime = 0;
+                    coffee.currentTime = 0;
+                    people.currentTime = 0;
+
+                    playing = false;
+                }
+
+                });
+        </script>
 
         </section>
 
