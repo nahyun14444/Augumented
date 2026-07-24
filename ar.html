@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,31 +18,36 @@
 
 <body>
 
-
-
     <main class="project">
 
         <section class="model-area">
 
             <model-viewer
-                 id="bakeryModel"
-                    src="./model/cafe-fin.glb"
-                    alt="3D-Modell der Vesuvio Bakery"
+                id="bakeryModel"
+                src="./model/cafe-fin.glb"
+                alt="3D-Modell der Vesuvio Bakery"
 
-                    camera-controls
-                    auto-rotate
+                camera-controls
+                auto-rotate
 
-                    shadow-intensity="1"
-                    exposure="1">
+                ar
+                ar-modes="webxr scene-viewer quick-look"
+                ar-placement="floor"
+                ar-scale="auto"
+
+                shadow-intensity="1"
+                exposure="1">
+
+                <button slot="ar-button" class="ar-button">
+                    View in AR
+                </button>
+
             </model-viewer>
-            
-          
 
         </section>
-
-       
 
     </main>
 
 </body>
+
 </html>
