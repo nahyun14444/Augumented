@@ -31,7 +31,7 @@ transition: all 0.2s ease;
 .opa{
     width: 23vw;
     transform: translateX(-70px);
-    
+    transition: all 0.2s ease;
     
 }
 
@@ -44,8 +44,6 @@ transition: all 0.2s ease;
     transition: all 0.2s ease;
     top: 18vh;
     left: 78vw;
-    transform: translate(-100px, -70px);
-
 }
 
 .opa2:hover{
@@ -61,6 +59,7 @@ font-size: 4vw;
 text-align:center;
 font-family: myfont;
 line-height: 1;
+margin-top: 5vw;
     
 }
 
